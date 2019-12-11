@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">figury1</string>
+    <string name="trojkat">Trojkat</string>
+    <string name="trojkat_button">Trojkat_button</string>
+    <string name="kwadrat_button">Kwadrat_button</string>
+    <string name="pentagram">Pentagram</string>
+    <string name="pentagram_button">Pentagram_button</string>
+    <string name="tr_jk_t">Trójkąt</string>
+    <string name="kwadrat_icon_view">Kwadrat</string>
+
+</resources>

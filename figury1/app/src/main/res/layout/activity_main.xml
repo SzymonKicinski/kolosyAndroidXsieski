@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    \
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+    
+
+    <ImageView
+        android:id="@+id/kwadrat_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="18dp"
+        android:contentDescription="@string/kwadrat_icon_view"
+        android:src="@drawable/kwadrat"
+        app:layout_constraintEnd_toStartOf="@+id/kwadrat_button"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pentagram_icon" />
+
+    <ImageView
+        android:id="@+id/trojkat_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/trojkat"
+        android:src="@drawable/trojkat"
+        app:layout_constraintEnd_toStartOf="@+id/trojkat_button"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pentagram_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="18dp"
+        android:contentDescription="@string/pentagram"
+        android:src="@drawable/pentagram"
+        app:layout_constraintEnd_toStartOf="@+id/pentagram_button"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trojkat_icon" />
+
+    <Button
+        android:id="@+id/trojkat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:contentDescription="@string/trojkat_button"
+        android:text="@string/tr_jk_t"
+        app:layout_constraintBottom_toBottomOf="@+id/trojkat_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/trojkat_icon" />
+
+    <Button
+        android:id="@+id/pentagram_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/pentagram_button"
+        android:text="@string/pentagram"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pentagram_icon"
+        app:layout_constraintTop_toTopOf="@+id/pentagram_icon" />
+
+    <Button
+        android:id="@+id/kwadrat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:contentDescription="@string/kwadrat_button"
+        android:text="kwadrat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kwadrat_icon"
+        app:layout_constraintTop_toTopOf="@+id/kwadrat_icon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
