@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Praca inżynierska</string>
+
+    <string name="main">Start</string>
+    <string name="weight">Waga</string>
+    <string name="circuit">Pomiary obwodów</string>
+    <string name="information">Informacje</string>
+    <string name="author">O autorze</string>
+
+    <string name="abouthAuthor">Autor aplikacji: \n  G M\n \n Kontakt: \n mail@mail.com \n \n \n Aplikacja została stworzona jako praca inżynierska.</string>
+
+    <string name="title_activity_pomiary">pomiary</string>
+
+
+    <string name="preferences">Informacje o użytkowniku:</string>
+    <string name="name">Imie</string>
+    <string name="height">Wzrost</string>
+    <string name="targetWeight">Waga docelowa</string>
+    <string name="age">Wiek</string>
+
+
+    <string name="witajTxt">Witaj</string>
+    <string name="wagaTxt">Twoja aktualna waga to:  </string>
+    <string name="RememberTxT">Pamiętaj! Jeśli coś się zmieniło zaktualizuj pomiary!</string>
+    <string name="weightInfo">Opcje dotyczące wagi:</string>
+    <string name="weightCircuit">Przejście do ostatnich pomiarów wagi </string>
+    <string name="circuitCircuit">Przejście do ostatnich pomiarów obwodów </string>
+
+    <string name="circuitInfo">Opcje dotyczące pomiarów:</string>
+    <string name="startInformation">Witaj użytkowniku! \n \n Aby informacje o Tobie zostały tu wyświetlone musisz je najpierw uzypełnić w zakładce Informacje</string>
+    <string name="title_activity_weight">WeightActivity</string>
+
+    <string name="day">Dzień</string>
+    <string name="month">Miesiąc</string>
+    <string name="year">Rok</string>
+    <string name="chest">Klatka</string>
+    <string name="waist">Pas</string>
+
+    <string name="saveData">Zapisz dane</string>
+    <string name="saveButton">Zapisz pomiar</string>
+    <string name="deleteButton">Usuń pomiar o nr:</string>
+
+    <string name="chartWeight">Wykres wagi</string>
+
+    <string name="chartChest">Wykres obw. klatki</string>
+    <string name="chartWaist">Wykres obw. pasa</string>
+
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">panstwa_dobre</string>
+    <string-array name="countries_array">
+        <item>Polska</item><item>Polska</item><item>Polska</item><item>Polska</item><item>Polska</item> <item>Anglia</item> <item>Niemcy</item> <item>Francja</item> <item>Austria</item> <item>Chorwacja</item> <item>Ukraina</item> <item>Węgry</item><item>Ukraina</item> <item>Węgry</item><item>Ukraina</item> <item>Węgry</item><item>Ukraina</item> <item>Węgry</item>
+    </string-array>
+    <string-array
+        name="shortcuts_array">
+        <item>PL</item> <item>PL</item> <item>PL</item> <item>PL</item> <item>PL</item> <item>EN</item> <item>DE</item> <item>FR</item> <item>A</item> <item>HR</item> <item>AU</item> <item>H</item><item>AU</item> <item>H</item><item>AU</item> <item>H</item><item>AU</item> <item>H</item>
+    </string-array>
+</resources>

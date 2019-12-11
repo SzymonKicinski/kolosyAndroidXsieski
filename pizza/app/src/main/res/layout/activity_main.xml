@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/payBtn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/jakieCiasto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="178dp"
+        android:text="Jakie ciasto?"
+        app:layout_constraintBottom_toTopOf="@+id/radioRodzajCiasta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioRodzajCiasta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="21dp"
+        android:checkedButton="@id/cienkieCiasto"
+        app:layout_constraintBottom_toTopOf="@+id/jakiRozmiarPizzy"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/jakieCiasto">
+
+        <RadioButton
+            android:id="@+id/cienkieCiasto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:text="Cienkie ciasto"
+            app:layout_constraintEnd_toEndOf="@+id/jakiRozmiarPizzy"
+            app:layout_constraintTop_toBottomOf="@+id/jakieCiasto" />
+
+        <RadioButton
+            android:id="@+id/grubeCiasto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="Grube ciasto"
+            app:layout_constraintEnd_toEndOf="@+id/cienkieCiasto"
+            app:layout_constraintTop_toBottomOf="@+id/cienkieCiasto" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/jakiRozmiarPizzy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="92dp"
+        android:text="Jaki rozmiar pizzy?"
+        app:layout_constraintBottom_toTopOf="@+id/skladniki"
+        app:layout_constraintEnd_toEndOf="@+id/radioRodzajCiasta"
+        app:layout_constraintTop_toBottomOf="@+id/radioRodzajCiasta" />
+
+    <RadioGroup
+        android:id="@+id/radioRozmiarpizzy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:checkedButton="@id/malyRozmiar"
+        app:layout_constraintBottom_toBottomOf="@+id/skladniki"
+        app:layout_constraintStart_toStartOf="@+id/jakiRozmiarPizzy">
+
+        <RadioButton
+            android:id="@+id/malyRozmiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Maly rozmiar" />
+
+        <RadioButton
+            android:id="@+id/sredniRozmiare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sredni rozmiar 2 zł" />
+
+        <RadioButton
+            android:id="@+id/duzyRozmiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duży rozmiar 4 zł" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/skladniki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:text="Skladniki"
+        app:layout_constraintBottom_toTopOf="@+id/listView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/jakiRozmiarPizzy" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="266dp"
+        android:layout_marginEnd="2dp"
+        android:clickable="false"
+        app:layout_constraintEnd_toStartOf="@+id/jakieCiasto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/inghdpi" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skladniki" />
+
+    <Button
+        android:id="@+id/buttonPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="103dp"
+        android:text="Pay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
